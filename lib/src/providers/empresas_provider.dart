@@ -1,9 +1,10 @@
 import 'dart:convert';
 
 import 'package:buss_app/src/modelos/modelo_prueba.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 
-class EmpresasProvider {
+class EmpresasProvider extends ChangeNotifier {
   final String _url = 'https://bussapp-dfda5-default-rtdb.firebaseio.com';
 
   //--------------parte para editar campos
